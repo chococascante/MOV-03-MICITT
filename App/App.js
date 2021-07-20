@@ -10,6 +10,8 @@ import {
 } from 'react-native';
 import ComponenteClase from './src/components/ComponenteClase';
 import ComponenteFlecha from './src/components/ComponenteFuncion';
+import ListaAlbumes from './src/components/organism/ListaAlbumes';
+import ListaAlbumesClass from './src/components/ListaAlbumesClass';
 
 const App = () => {
   const [contadorClases, setContadorClases] = useState(0);
@@ -21,19 +23,6 @@ const App = () => {
 
   const handleCambioContador = () => {
     setContadorClases(contadorClases + 1);
-  };
-
-  const fetchAlbumes = async () => {
-    try {
-      const resultado = await fetch(
-        'https://jsonplaceholder.typicode.com/albums',
-      );
-
-      const datos = await resultado.json();
-      console.log(datos);
-    } catch (error) {
-      console.error(error);
-    }
   };
 
   const fetchAlbumesPromesa = () => {
@@ -49,18 +38,8 @@ const App = () => {
 
   return (
     <SafeAreaView>
-      <ComponenteClase
-        nombre={nombre}
-        onCambioNombre={handleCambioNombre}
-        onCambioContador={handleCambioContador}
-        contadorClases={contadorClases}
-      />
-      <ComponenteFlecha
-        nombre={nombre}
-        onCambioNombre={handleCambioNombre}
-        onCambioContador={handleCambioContador}
-        contadorClases={contadorClases}
-      />
+      {/* <ListaAlbumesClass /> */}
+      <ListaAlbumes />
     </SafeAreaView>
   );
 };
