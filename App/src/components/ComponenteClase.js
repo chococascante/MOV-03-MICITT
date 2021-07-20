@@ -1,12 +1,26 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
+import {Text, Button, TextInput} from 'react-native';
 
+const saludo = 'Hola!';
 export default class ComponenteClase extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {
+    this.props.fetchAlbumes();
+  }
+
   render() {
     return (
       <>
-        <Text>Soy una clase.</Text>
-        <Button title="Botón" />
+        <Text>Soy la clase {this.props.contadorClases}.</Text>
+        <TextInput
+          placeholder="Cambie el nombre"
+          value={this.props.nombre}
+          onChangeText={this.props.onCambioNombre}
+        />
+        <Button title="Botón" onPress={this.props.onCambioContador} />
       </>
     );
   }

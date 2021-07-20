@@ -1,12 +1,32 @@
-import React from 'react';
-import {View, Text, Button} from 'react-native';
+import React, {useEffect} from 'react';
+import {View, Text, Button, TextInput} from 'react-native';
 
-export function ComponenteFuncion() {
-  return <Text>Soy una función.</Text>;
-}
+const ComponenteFlecha = ({
+  contadorClases,
+  nombre,
+  onCambioNombre,
+  onCambioContador,
+}) => {
+  const obj = {nombre1: 'Luis', apellido: 'Cascante'};
+  const {nombre1} = obj;
 
-const ComponenteFlecha = () => {
-  return <Text>Soy una función de flecha.</Text>;
+  useEffect(() => {
+    setTimeout(() => {
+      onCambioContador();
+    }, 3000);
+  }, []);
+
+  return (
+    <View>
+      <Text>Soy la clase {contadorClases}.</Text>
+      <TextInput
+        placeholder="Cambie el nombre"
+        value={nombre}
+        onChangeText={onCambioNombre}
+      />
+      <Button title="Botón" onPress={onCambioContador} />
+    </View>
+  );
 };
 
 export default ComponenteFlecha;
