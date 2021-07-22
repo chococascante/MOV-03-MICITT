@@ -1,6 +1,6 @@
 import styled from '@emotion/native';
 import React from 'react';
-import {View, Text, Button, FlatList, ListRenderItem} from 'react-native';
+import {Button, Image, StyleSheet} from 'react-native';
 import ITodo from '../../../models/ITodo';
 import IUser from '../../../models/IUsers';
 import TodoListItem from '../TodoListItem';
@@ -29,6 +29,11 @@ const UserDetails: React.FC<UserDetailsProps> = ({
       <CustomText>{name}</CustomText>
       <CustomText>{email}</CustomText>
       <CustomText>{phone}</CustomText>
+
+      <Image
+        style={styles.image}
+        source={{uri: 'https://via.placeholder.com/600/92c952'}}
+      />
 
       {todos && (
         <TodoList
@@ -61,5 +66,12 @@ const CustomText = styled.Text`
 const TodoList = styled.FlatList`
   padding: 8px;
 `;
+
+const styles = StyleSheet.create({
+  image: {
+    width: 50,
+    height: 50,
+  },
+});
 
 export default UserDetails;
