@@ -4,5 +4,5 @@ import IUser from './IUsers';
 
 export interface IAction {
   type: string;
-  payload?: string | number | ITodo[] | IUser[] | IPublicacion[];
+  payload?: string | number | ITodo[] | IUser[] | IPublicacion[] | IPublicacion;
 }

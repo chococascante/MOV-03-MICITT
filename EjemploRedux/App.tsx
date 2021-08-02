@@ -6,6 +6,10 @@ import {createStore, combineReducers, applyMiddleware, compose} from 'redux'; //
 import HomeScreen from './src/components/screens/HomeScreen';
 import * as reducers from './src/store/reducers';
 import thunk from 'redux-thunk';
+import ListaPublicaciones from './src/components/organisms/ListaPublicaciones';
+import ListaPublicacionesClase from './src/components/organisms/ListaPublicacionesClase';
+import {PublicacionesProvider} from './src/contexts/publicaciones-context';
+import {UsersProvider} from './src/contexts/users-context';
 
 const store = createStore(
   combineReducers(reducers),
@@ -15,9 +19,13 @@ const store = createStore(
 const App = () => {
   return (
     <Provider store={store}>
-      <SafeAreaView>
-        <HomeScreen />
-      </SafeAreaView>
+      <PublicacionesProvider>
+        <UsersProvider>
+          <SafeAreaView>
+            <HomeScreen />
+          </SafeAreaView>
+        </UsersProvider>
+      </PublicacionesProvider>
     </Provider>
   );
 };

@@ -2,6 +2,7 @@ import styled from '@emotion/native';
 import React, {FC} from 'react';
 import {Text} from 'react-native';
 import {useDispatch} from 'react-redux';
+import {useUsers} from '../../../contexts/users-context';
 import IUser from '../../../models/IUsers';
 import {actualizarSelectedUser} from '../../../store/actions/Users';
 
@@ -11,9 +12,11 @@ export interface UserListItemProps {
 }
 
 const UserListItem: FC<UserListItemProps> = ({user, index}) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
+  const {setSelectedUser} = useUsers();
   const onPress = () => {
-    dispatch(actualizarSelectedUser(index));
+    // dispatch(actualizarSelectedUser(index));
+    setSelectedUser(index);
   };
 
   return (

@@ -23,3 +23,17 @@ export function fetchPublicaciones() {
     }
   };
 }
+
+export function fetchPublicacion(idPublicacion: number) {
+  return async function (dispatch: ThunkDispatch<IState, null, IAction>) {
+    try {
+      const publicaciones = await axios.get(
+        `https://jsonplaceholder.typicode.com/posts/${idPublicacion}`,
+      );
+
+      dispatch(actualizarPublicaciones(publicaciones.data));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+}

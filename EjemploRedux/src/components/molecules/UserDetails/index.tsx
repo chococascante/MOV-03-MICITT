@@ -2,6 +2,7 @@ import styled from '@emotion/native';
 import React, {useEffect, useMemo} from 'react';
 import {Button, Image, StyleSheet} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
+import {useUsers} from '../../../contexts/users-context';
 import {IState} from '../../../models/IState';
 import ITodo from '../../../models/ITodo';
 import {fetchTodos} from '../../../store/actions/Todos';
@@ -12,7 +13,8 @@ const UserDetails: React.FC = () => {
   const dispatch = useDispatch();
 
   const selectedUser = useSelector((state: IState) => state.Users.selectedUser);
-  const users = useSelector((state: IState) => state.Users.users);
+  // const users = useSelector((state: IState) => state.Users.users);
+  const {users, setSelectedUser} = useUsers();
   const {name, email, phone, id} = users[selectedUser || 0];
   const todos = useSelector((state: IState) => state.Todos.todos);
   const filteredTodos = useMemo(
@@ -21,7 +23,8 @@ const UserDetails: React.FC = () => {
   );
 
   const onBackPress = () => {
-    dispatch(actualizarSelectedUser(null));
+    // dispatch(actualizarSelectedUser(null));
+    setSelectedUser(null);
   };
 
   useEffect(() => {
