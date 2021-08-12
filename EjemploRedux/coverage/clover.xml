@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1628566375706" clover="3.2.0">
+  <project timestamp="1628566375706" name="All files">
+    <metrics statements="58" coveredstatements="30" conditionals="7" coveredconditionals="6" methods="26" coveredmethods="9" elements="91" coveredelements="45" complexity="0" loc="58" ncloc="58" packages="8" files="8" classes="8"/>
+    <package name="components.molecules.UserListItem">
+      <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="index.tsx" path="F:\Proyectos\Cenfotec\MOV-03-MICITT\EjemploRedux\src\components\molecules\UserListItem\index.tsx">
+        <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.organisms.UserList">
+      <metrics statements="7" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="3"/>
+      <file name="index.tsx" path="F:\Proyectos\Cenfotec\MOV-03-MICITT\EjemploRedux\src\components\organisms\UserList\index.tsx">
+        <metrics statements="7" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="3"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="contexts">
+      <metrics statements="14" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+      <file name="users-context.tsx" path="F:\Proyectos\Cenfotec\MOV-03-MICITT\EjemploRedux\src\contexts\users-context.tsx">
+        <metrics statements="14" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="store.actions">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="F:\Proyectos\Cenfotec\MOV-03-MICITT\EjemploRedux\src\store\actions\index.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="store.actions.Prueba">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.ts" path="F:\Proyectos\Cenfotec\MOV-03-MICITT\EjemploRedux\src\store\actions\Prueba\index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="store.actions.Publicaciones">
+      <metrics statements="11" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
+      <file name="index.ts" path="F:\Proyectos\Cenfotec\MOV-03-MICITT\EjemploRedux\src\store\actions\Publicaciones\index.ts">
+        <metrics statements="11" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="store.actions.Users">
+      <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
+      <file name="index.ts" path="F:\Proyectos\Cenfotec\MOV-03-MICITT\EjemploRedux\src\store\actions\Users\index.ts">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="store.reducers.Publicaciones">
+      <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <file name="index.ts" path="F:\Proyectos\Cenfotec\MOV-03-MICITT\EjemploRedux\src\store\reducers\Publicaciones\index.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

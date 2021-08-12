@@ -13,7 +13,7 @@ const initialState: IPublicacionReducer = {
 
 export default (
   state = initialState,
-  {type, payload}: IAction,
+  {type, payload}: IAction = {type: ''},
 ): IPublicacionReducer => {
   switch (type) {
     case ACTUALIZAR_PUBLICACIONES:

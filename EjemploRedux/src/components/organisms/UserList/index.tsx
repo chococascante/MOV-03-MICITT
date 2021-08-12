@@ -8,20 +8,21 @@ import {fetchUsers} from '../../../store/actions/Users';
 import UserListItem from '../../molecules/UserListItem';
 
 const UserList: React.FC = () => {
-  // const users = useSelector((state: IState) => state.Users.users);
-  // const dispatch = useDispatch();
+  const users = useSelector((state: IState) => state.Users.users);
+  const dispatch = useDispatch();
 
-  const {users, fetchUsers} = useUsers();
+  // const {users, fetchUsers} = useUsers();
 
   useEffect(() => {
-    // dispatch(fetchUsers());
-    fetchUsers();
+    dispatch(fetchUsers());
+    // fetchUsers();
   }, []);
 
   return (
     <View>
       {users.length > 0 ? (
         <FlatList
+          testID="user-flatlist"
           data={users}
           renderItem={({item, index}) => (
             <UserListItem key={item.id} user={item} index={index} />

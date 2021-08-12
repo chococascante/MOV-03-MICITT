@@ -10,6 +10,7 @@ import ListaPublicaciones from './src/components/organisms/ListaPublicaciones';
 import ListaPublicacionesClase from './src/components/organisms/ListaPublicacionesClase';
 import {PublicacionesProvider} from './src/contexts/publicaciones-context';
 import {UsersProvider} from './src/contexts/users-context';
+import Component from './Component';
 
 const store = createStore(
   combineReducers(reducers),
@@ -22,7 +23,7 @@ const App = () => {
       <PublicacionesProvider>
         <UsersProvider>
           <SafeAreaView>
-            <HomeScreen />
+            <Component />
           </SafeAreaView>
         </UsersProvider>
       </PublicacionesProvider>
