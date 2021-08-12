@@ -2,6 +2,7 @@ import styled from '@emotion/native';
 import React, {useEffect, useMemo} from 'react';
 import {Button, Image, StyleSheet} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
+import {useHistory} from 'react-router-native';
 import {useUsers} from '../../../contexts/users-context';
 import {IState} from '../../../models/IState';
 import ITodo from '../../../models/ITodo';
@@ -11,6 +12,7 @@ import TodoListItem from '../TodoListItem';
 
 const UserDetails: React.FC = () => {
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const selectedUser = useSelector((state: IState) => state.Users.selectedUser);
   // const users = useSelector((state: IState) => state.Users.users);
@@ -25,6 +27,8 @@ const UserDetails: React.FC = () => {
   const onBackPress = () => {
     // dispatch(actualizarSelectedUser(null));
     setSelectedUser(null);
+    //REACT ROUTER NATIVE
+    history.goBack();
   };
 
   useEffect(() => {

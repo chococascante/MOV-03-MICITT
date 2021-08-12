@@ -15,11 +15,22 @@
     "@emotion/native": "^11.0.0",
     "@emotion/react": "^11.4.0",
     "@react-native-community/checkbox": "^0.5.8",
+<<<<<<< HEAD
     "@testing-library/react-native": "^7.2.0",
+=======
+    "@react-navigation/bottom-tabs": "^6.0.1",
+    "@react-navigation/drawer": "^6.0.1",
+    "@react-navigation/native": "^6.0.1",
+    "@react-navigation/stack": "^6.0.1",
+    "@types/react-router-native": "^5.1.1",
+>>>>>>> 84393c5e69106ffb1dec57be1d6b4d8f277eba29
     "axios": "^0.21.1",
     "react": "17.0.1",
     "react-native": "0.64.1",
+    "react-native-safe-area-context": "^3.2.0",
+    "react-native-screens": "^3.5.0",
     "react-redux": "^7.2.4",
+    "react-router-native": "^5.2.0",
     "redux": "^4.1.0",
     "redux-mock-store": "^1.5.4",
     "redux-thunk": "^2.3.0"
