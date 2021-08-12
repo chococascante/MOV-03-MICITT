@@ -10,6 +10,9 @@ import ListaPublicaciones from './src/components/organisms/ListaPublicaciones';
 import ListaPublicacionesClase from './src/components/organisms/ListaPublicacionesClase';
 import {PublicacionesProvider} from './src/contexts/publicaciones-context';
 import {UsersProvider} from './src/contexts/users-context';
+import Routes from './src/routes/Routes';
+import MyBottomTabs from './src/navigators/MyBottomTabs';
+import {NavigationContainer} from '@react-navigation/native';
 
 const store = createStore(
   combineReducers(reducers),
@@ -21,9 +24,9 @@ const App = () => {
     <Provider store={store}>
       <PublicacionesProvider>
         <UsersProvider>
-          <SafeAreaView>
-            <HomeScreen />
-          </SafeAreaView>
+          <NavigationContainer>
+            <MyBottomTabs />
+          </NavigationContainer>
         </UsersProvider>
       </PublicacionesProvider>
     </Provider>

@@ -1,5 +1,11 @@
 import React, {useEffect} from 'react';
-import {View, Text, ActivityIndicator, FlatList} from 'react-native';
+import {
+  View,
+  Text,
+  ActivityIndicator,
+  FlatList,
+  SafeAreaView,
+} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {useUsers} from '../../../contexts/users-context';
 import {IState} from '../../../models/IState';
@@ -19,7 +25,7 @@ const UserList: React.FC = () => {
   }, []);
 
   return (
-    <View>
+    <SafeAreaView>
       {users.length > 0 ? (
         <FlatList
           data={users}
@@ -30,7 +36,7 @@ const UserList: React.FC = () => {
       ) : (
         <ActivityIndicator color="#000" />
       )}
-    </View>
+    </SafeAreaView>
   );
 };
 
